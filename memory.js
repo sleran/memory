@@ -12,7 +12,7 @@ function clickCounter() {
     if (typeof(Storage) !== "undefined") {
 
             localStorage.clickcount = Number(localStorage.clickcount) + 1;
-            var content = localStorage.clickcount + ' forsøg.';
+            var content = localStorage.clickcount;
             document.getElementById('result').innerHTML = content;
     }
 
@@ -41,7 +41,7 @@ function drawBoard(event) {
     localStorage.clickcount = '0';
 
     for (var i = 0; i< front.length; i++ ) {
-        front[i].addEventListener('click', clickCounter);
+        front[i].addEventListener('touchstart', clickCounter);
     }
 
     board.insertAdjacentHTML('beforeend', 'Antal forsøg: <div id="result"></div>');
