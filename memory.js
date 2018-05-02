@@ -119,7 +119,7 @@ function twoTiles(tiles) {
 function flipTile(event) {
     'use strict';
     var tiles = Array.from(board.querySelectorAll('section'));
-    if (event.target !== event.currentTarget && TouchList.length < 2) {
+    if (event.target !== event.currentTarget && event.touches.length === 1) {
         if (event.target.nodeName !== 'IMG') {
             event.target.parentNode.classList.add('flipped'); //parentnode er section der skal vendes
             tilesFlipped.push(tiles.indexOf(event.target.parentNode));
@@ -130,7 +130,7 @@ function flipTile(event) {
 
 }
 
-board.addEventListener('touchend', flipTile);
+board.addEventListener('touchstart', flipTile);
 document.getElementById('message').getElementsByTagName('button')[0].addEventListener('click', newGame);
 document.getElementById('playGame').addEventListener('submit', drawBoard);
 
