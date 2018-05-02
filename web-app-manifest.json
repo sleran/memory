@@ -1,0 +1,17 @@
+{
+    "name" : "Memory Spillet",
+    "icons" : [
+        {
+            "src":"puzzle.png",
+            "sizes":"114x114",
+            "type":"image/png"
+        }
+        
+    ],
+    "theme-color": "#800080",
+    "background-color": "#800080",
+    "scope": "xxx/memory/",
+    "start-url": "xxx/memory/index.html",
+    "display": "standalone",
+    "orientation": "portrait"
+}

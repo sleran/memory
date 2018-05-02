@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="da" manifest="manifest.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="img/puzzle.png">
+    <link rel="apple-touch-icon.precomposed" href="img/puzzle.png">
+    <link rel="manifest" href="web-app-manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory spil</title>
+</head>
+<body>
+    <div id="welcome">
+        <h1>Velkommen til memory spillet</h1>
+        <p>Vælg antal brikker</p>
+        <form id="playGame">
+            <input type="radio" name="level" value="16" id="sixteen" checked><label for="sixteen">16</label>
+            <input type="radio" name="level" value="20" id="twenty"><label for="twenty">20</label>
+            <input type="radio" name="level" value="24" id="twentyfour"><label for="twentyfour">24</label>
+            <button type="submit">Spil spillet</button>
+        </form>
+    </div>
+    <div id="board">
+    </div>
+    <div id="message">
+        <p>Tillykke! Du fik dem alle.</p>
+        <button>Spil igen</button>
+    </div>
+    <script src="memory.js"></script>
+</body>
+</html>
