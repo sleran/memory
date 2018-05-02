@@ -7,7 +7,6 @@ var tilesFlipped = [];
 var tilesMatch = [];
 var i;
 
-
 function clickCounter() {
     'use strict';
     if (typeof(Storage) !== "undefined") {
@@ -45,8 +44,7 @@ function drawBoard(event) {
         front[i].addEventListener('click', clickCounter);
     }
 
-    board.insertAdjacentHTML('beforeend', '<div id="result"></div>');
-
+    board.insertAdjacentHTML('beforeend', 'Antal forsøg: <div id="result"></div>');
 
 }
 

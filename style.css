@@ -60,7 +60,6 @@ body {
 #board section {
     width: 22vw;
     height: 22vw;
-    color: #800080;
     margin: 1vw 0;
     position: relative;
     transform: rotateY(0deg);
