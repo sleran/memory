@@ -10,8 +10,8 @@
     ],
     "theme-color": "#800080",
     "background-color": "#800080",
-    "scope": "xxx/memory/",
-    "start-url": "xxx/memory/index.html",
+    "scope": "https://sleran.github.io/memory/",
+    "start-url": "https://sleran.github.io/memory/index.html",
     "display": "standalone",
     "orientation": "portrait"
 }
